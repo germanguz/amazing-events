@@ -1,0 +1,283 @@
+body, figure {
+    margin: 0;
+}
+
+.body-flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgray;
+}
+
+.img-logo {
+    width: 400px;
+    margin-left: 5px;
+}
+
+.link-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+.header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 136px;
+    height: 57px;
+
+    font-size: 30px;
+    text-align: center;
+    line-height: 0.9;
+    background-color: #d90368;
+    box-shadow: 1px 1px 10px rgb(78, 78, 78) inset,
+                -1px -1px 10px rgb(78, 78, 78) inset;
+    border-radius: 10px;
+}
+
+.header-link:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.section-title-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 0 100px;
+}
+
+.page-title, .move-link {
+    font-size: 60px;
+	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
+}
+
+/* *******Formulario********* */
+.form-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+}
+
+fieldset {
+    border: none;
+}
+.category-flex {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+}
+
+label {
+    font-size: 20px;
+}
+
+.input-text {
+    width: 300px;
+    padding: 5px;
+}
+
+.submit {
+    padding: 5px;
+}
+
+/* ***********tarjetas********** */
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 10%;
+}
+
+.card {
+    width: 370px;
+    margin: 4%;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 3px;
+    transition: 200ms;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-image {
+    width: 350px;
+    height: 200px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.base-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.but-view {
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: -2px -2px 5px black;
+}
+
+/* *******Table******* */
+table {
+    background-color: #fdeff5;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: 50px auto;
+}
+
+th {
+    background-color: lightgray;
+    text-align: start;
+    font-size: 20px;
+}
+
+td {
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* ******Contact Form******* */
+.form-flex-contact {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+.contact-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-size: 24px;  
+}
+
+.contact-input {
+    margin: 4px 0 10px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 12px;
+    background-color: #fdeff5;
+}
+
+.contact-but {
+    width: 150px;
+    padding: 10px;
+    margin: 0 0 0 auto;
+
+    font-size: 20px;
+    background-color: #d90368;
+    box-shadow: 1px 1px 10px rgb(78, 78, 78) inset,
+                -1px -1px 10px rgb(78, 78, 78) inset;
+    border-radius: 10px;
+}
+
+.contact-but:hover {
+    box-shadow: 0 0 10px black;
+}
+
+/* *******Details******** */
+.detail-flex {
+    display: flex;
+    width: 900px;
+    padding: 20px;
+    margin: 100px auto;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    background-color: #fdeff5;
+}
+
+.figure-detail {
+    width: 500px;
+    height: 345px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-detail {
+    width: 500px;
+    height: 345px;
+}
+
+.descrip-detail {
+    width: 336px;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.detail-title {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.descrip-detail>p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.descrip-detail span {
+    font-weight: bold;
+}
+
+
+/* ******Footer******* */
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+}
+
+.foot-fig {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot-img {
+    width: 50px;
+}
+.foot-img:hover {
+    transform: scale(1.1);
+}
+
+.foot-title {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.foot-title>h2 {
+    font-size: 40px;
+}
+
+/* para fijar footer abajo con .body-flex */
+.foot-bottom {
+    margin-top: auto;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+

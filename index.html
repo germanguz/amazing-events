@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,117 +9,143 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/ico_amzg_events.png" type="image/x-icon">
 </head>
+
 <body>
-    <header>
+    <header class="header-flex">
         <figure>
-            <img src="./assets/images/logo_amzg_events.png" alt="logo amazing events">
+            <img class="img-logo" src="./assets/images/logo_amzg_events.png" alt="logo amazing events">
         </figure>
-        <nav>
-            <a href="#">Home</a>
-            <a href="./upcoming_events.html">Upcoming Events</a>
-            <a href="./past_events.html">Past Events</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./stats.html">Stats</a>
+        <nav class="link-flex">
+            <a class="header-link" href="#">Home</a>
+            <a class="header-link" href="./upcoming_events.html">Upcoming Events</a>
+            <a class="header-link" href="./past_events.html">Past Events</a>
+            <a class="header-link" href="./stats.html">Stats</a>
+            <a class="header-link" href="./contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <a href="">&lt;</a>
-            <h1>Home</h1>
-            <a href="">></a>
+        <!-- MAIN TITLE -->
+        <section class="section-title-flex">
+            <a class="move-link" href="#">&lt;</a>
+            <h1 class="page-title">Home</h1>
+            <a class="move-link" href="./upcoming_events.html">&gt;</a>
         </section>
 
-        <div>
-            <form action="./README.md" method="get">
+        <!-- FORM -->
+        <form class="form-flex" action="./README.md" method="get">
+            <fieldset class="category-flex">
+                <label for="category-a">
                 <input type="checkbox" name="choose" id="category-a" value="cat-a">
-                <label for="category-a">CategoryA</label>
-
+                CategoryA</label>
+    
+                <label for="category-b">
                 <input type="checkbox" name="choose" id="category-b" value="cat-b">
-                <label for="category-b">CategoryB</label>
-                
+                CategoryB</label>
+    
+                <label for="category-c">
                 <input type="checkbox" name="choose" id="category-c" value="cat-c">
-                <label for="category-c">CategoryC</label>
-                
+                CategoryC</label>
+    
+                <label for="category-d">
                 <input type="checkbox" name="choose" id="category-d" value="cat-d">
-                <label for="category-d">CategoryD</label>
-                
+                CategoryD</label>
+    
+                <label for="category-e">
                 <input type="checkbox" name="choose" id="category-e" value="cat-e">
-                <label for="category-e">CategoryE</label>
+                CategoryE</label>
+            </fieldset>
 
-                <input type="text">
-                <input type="submit" value="go">
-            </form>
-        </div>
-        <div>
-            <article>
+            <fieldset>
+                <input class="input-text" type="search" placeholder="Search">
+                <input class="submit" type="submit" value="go">
+            </fieldset>
+        </form>
+
+        <!-- CARD'S -->
+        <div class="card-flex">
+            <article class="card">
                 <figure>
-                    <img src="./assets/images/cinema.jpg" alt="cinema">
+                    <img class="card-image" src="./assets/images/cinema.jpg" alt="cinema">
                 </figure>
-                <h2>Titulo</h2>
-                <p>Texto descriptivo</p>
-                <p>prize $0</p>
-                <a href="./details.html">View more</a>
+                <h2>Cine</h2>
+                <p>Estrenos y Clásicos</p>
+                <div class="base-card">
+                    <p>prize $0</p>
+                    <a class="but-view" href="./details.html">View more</a>
+                </div>
             </article>
-            <article>
+            <article class="card">
                 <figure>
-                    <img src="./assets/images/costume_party.jpg" alt="costume party">
+                    <img class="card-image" src="./assets/images/costume_party.jpg" alt="costume party">
                 </figure>
-                <h2>Titulo</h2>
-                <p>Texto descriptivo</p>
-                <p>prize $0</p>
-                <a href="./details.html">View more</a>
+                <h2>Circos y teatros</h2>
+                <p>Espectáculos de actuación</p>
+                <div class="base-card">
+                    <p>prize $0</p>
+                    <a class="but-view" href="./details.html">View more</a>
+                </div>
             </article>
-            <article>
+            <article class="card">
                 <figure>
-                    <img src="./assets/images/food_fair.jpg" alt="food fair">
+                    <img class="card-image" src="./assets/images/food_fair.jpg" alt="food fair">
                 </figure>
-                <h2>Titulo</h2>
-                <p>Texto descriptivo</p>
-                <p>prize $0</p>
-                <a href="./details.html">View more</a>
+                <h2>Eventos Gastronómicos</h2>
+                <p>Ferias de comidas y platos típicos</p>
+                <div class="base-card">
+                    <p>prize $0</p>
+                    <a class="but-view" href="./details.html">View more</a>
+                </div>
             </article>
-            <article>
+            <article class="card">
                 <figure>
-                    <img src="./assets/images/marathon.jpg" alt="marathon">
+                    <img class="card-image" src="./assets/images/marathon.jpg" alt="marathon">
                 </figure>
-                <h2>Titulo</h2>
-                <p>Texto descriptivo</p>
-                <p>prize $0</p>
-                <a href="./details.html">View more</a>
+                <h2>Eventos deportivos</h2>
+                <p>Maratón, ciclismo, carreras y más... </p>
+                <div class="base-card">
+                    <p>prize $0</p>
+                    <a class="but-view" href="./details.html">View more</a>
+                </div>
             </article>
-            <article>
+            <article class="card">
                 <figure>
-                    <img src="./assets/images/museum_tour.jpg" alt="museum tour">
+                    <img class="card-image" src="./assets/images/museum_tour.jpg" alt="museum tour">
                 </figure>
-                <h2>Titulo</h2>
-                <p>Texto descriptivo</p>
-                <p>prize $0</p>
-                <a href="./details.html">View more</a>
+                <h2>Museo</h2>
+                <p>Recorridos en los mejores</p>
+                <div class="base-card">
+                    <p>prize $0</p>
+                    <a class="but-view" href="./details.html">View more</a>
+                </div>
             </article>
-            <article>
+            <article class="card">
                 <figure>
-                    <img src="./assets/images/music_concert.jpg" alt="music concert">
+                    <img class="card-image" src="./assets/images/music_concert.jpg" alt="music concert">
                 </figure>
-                <h2>Titulo</h2>
-                <p>Texto descriptivo</p>
-                <p>prize $0</p>
-                <a href="./details.html">View more</a>
+                <h2>Musicales</h2>
+                <p>Recitales, coros, música clásica</p>
+                <div class="base-card">
+                    <p>prize $0</p>
+                    <a class="but-view" href="./details.html">View more</a>
+                </div>
             </article>
         </div>
 
     </main>
 
-    <footer>
-        <figure>
-            <img src="./assets/images/instagram.png" alt="Instagram">
-            <img src="./assets/images/facebook.png" alt="Facebook">
-            <img src="./assets/images/whatsapp.png" alt="whatsApp">
+    <!-- FOOTER -->
+    <footer class="footer-flex">
+        <figure class="foot-fig">
+            <img class="foot-img" src="./assets/images/instagram.png" alt="Instagram" title="Instagram">
+            <img class="foot-img" src="./assets/images/facebook.png" alt="Facebook" title="Facebook">
+            <img class="foot-img" src="./assets/images/whatsapp.png" alt="whatsApp" title="whatsApp">
         </figure>
-        <section>
-            <h2>Cohort</h2>
+        <section class="foot-title">
+            <h2>FE05-TN</h2>
         </section>
     </footer>
-    
+
 </body>
+
 </html>
