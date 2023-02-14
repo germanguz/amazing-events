@@ -74,6 +74,7 @@ a {
 fieldset {
     border: none;
 }
+
 .category-flex {
     width: 55%;
     display: flex;
@@ -279,5 +280,327 @@ td {
     margin-top: auto;
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!---MEDIA---!!!!!!!!!!!!! */
 
+@media only screen and (max-width: 1193px) {
+    .header-flex {
+        flex-direction: column;
+    }
+    
+    .link-flex {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .header-link {
+        width: 110px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .section-title-flex {
+        padding: 0 80px;
+    }
+
+    .page-title {
+        margin: 40px 0;
+    }
+
+    .form-flex {
+        flex-direction: column;
+    }
+
+    .category-flex {
+        width: 90%;
+    }
+
+    .media-search {
+        margin: 0 auto;
+    }
+
+    .card-flex {
+        margin: 0;
+    }
+    
+    .card {
+        width: 350px;
+        margin: 2%;
+    }
+    
+    .card-image {
+        margin: 0 auto;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    
+    .foot-fig {
+        width: 30%;
+    }
+    
+    .foot-title {
+        width: 30%;
+    }
+    
+    table {
+        width: 700px;
+        margin: 30px auto;
+    }
+
+    .detail-flex {
+        width: 700px;
+    }
+    
+    .figure-detail {
+        width: 340px;
+        height: 345px;
+    }
+    
+    .img-detail {
+        width: 345px;
+        height: 345px;
+    }
+    
+    .descrip-detail {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-flex {
+        align-items: center;
+    }
+
+    .img-logo {
+        margin-left: 0px;
+    }
+    
+    .link-flex {
+        justify-content: space-around;
+        width: 98%;
+        margin: 0;
+    }
+
+    .header-link {
+        width: 83px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .section-title-flex {
+        padding: 0 40px;
+    }
+
+    .page-title {
+        font-size: 40px;
+        margin: 30px 0;
+    }
+
+    .form-flex {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .category-flex {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+
+    .media-search {
+        margin: 0 auto;
+    }
+
+    .card-flex {
+        margin: 0;
+    }
+    
+    .card {
+        width: 350px;
+        margin: 2%;
+    }
+    
+    .card-image {
+        margin: 0 auto;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    
+    .foot-fig {
+        width: 40%;
+    }
+    
+    .foot-title {
+        width: 40%;
+    }
+    
+    .foot-title>h2 {
+        font-size: 30px;
+    }
+
+    table {
+        width: 450px;
+    }
+    
+    .contact-flex {
+        width: 400px;
+    }
+
+    textarea {
+        width: 400px;
+    }
+
+    .detail-flex {
+        width: 350px;
+        height: 700px;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    
+    .figure-detail {
+        width: 345px;
+        height: 345px;
+    }
+    
+    .img-detail {
+        width: 345px;
+        height: 345px;
+    }
+    
+    .descrip-detail {
+        margin: 25px auto 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header-flex {
+        align-items: center;
+    }
+
+    .img-logo {
+        width: 200px;
+    }
+    
+    .link-flex {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .header-link {
+        width: 100%;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 0px;
+    }
+
+    .section-title-flex {
+        padding: 0 10px;
+    }
+
+    .page-title {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .form-flex {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .category-flex {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-text {
+        width: 250px;
+        padding: 5px;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+
+    .media-search {
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .card-image {
+        width: 300px;
+    }
+   
+    .foot-img {
+        width: 30px;
+    }
+
+    .foot-title>h2 {
+        font-size: 20px;
+    }
+
+    table {
+        width: 95%;
+    }
+    
+    th {
+        font-size: 16px;
+    }
+    
+    td {
+        font-size: 14px;
+    }
+    
+    .contact-flex {
+        width: 300px;
+    }
+
+    textarea {
+        width: 300px;
+    }
+    
+    .contact-label {
+        font-size: 20px;  
+    }
+    
+    .contact-input {
+        font-size: 16px;
+    }
+    
+    .detail-flex {
+        width: 280px;
+        height: 620px;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    
+    .figure-detail {
+        width: 280px;
+        height: 300px;
+    }
+    
+    .img-detail {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .descrip-detail {
+        width: 240px;
+    }
+    
+    .detail-title {
+        font-size: 24px;
+    }
+    
+    .descrip-detail>p {
+        font-size: 16px;
+    }
+}
