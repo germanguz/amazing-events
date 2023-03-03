@@ -15,7 +15,7 @@ function printAllEvents() {
             <p>${event.description}</p>
             <div class="base-card">
                 <p>Price $${event.price}</p>
-                <a class="but-view" href="./details.html">View more</a>
+                <a class="but-view" href="./details.html?id=${event._id}">View more</a>
             </div> 
         </article>
         `
