@@ -35,8 +35,10 @@
 
         <!-- FORM -->
         <form class="form-flex" action="./README.md" method="get">
-            <fieldset class="category-flex">
-                <label for="category-a">
+            <fieldset class="category-flex" id="categoryId">
+                <!-- *Acá va el código dinámico de categorías -->
+                
+                <!-- <label for="category-a">
                 <input type="checkbox" name="choose" id="category-a" value="cat-a">
                 CategoryA</label>
     
@@ -54,11 +56,11 @@
     
                 <label for="category-e">
                 <input type="checkbox" name="choose" id="category-e" value="cat-e">
-                CategoryE</label>
+                CategoryE</label> -->
             </fieldset>
 
             <fieldset class="media-search">
-                <input class="input-text" type="search" placeholder="Search">
+                <input onkeyup="captureData()" class="input-text" type="search" placeholder="Search" name="searching" id="idSearch">
                 <input class="submit" type="submit" value="go">
             </fieldset>
         </form>
@@ -83,6 +85,7 @@
     </footer>
 <script src="/assets/scripts/data_ae.js"></script>
 <script src="/assets/scripts/main.js"></script>
+<script src="/assets/scripts/filter.js"></script>
 </body>
 
 </html>
