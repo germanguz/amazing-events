@@ -1,4 +1,29 @@
 // Para el Past Events
+
+// Para las categorías
+function printCategory() {
+    let allCateg = [];
+    let allCategPrint = [];
+    let container = document.getElementById("categoryId-past");
+
+    data.events.forEach(element => {
+        if (!allCateg.includes(element.category)) {
+            allCateg.push(element.category)
+        }
+    });
+
+    allCateg.forEach(element => {
+        allCategPrint.push(`<label for="${element}">
+        <input type="checkbox" name="choose" id="${element}" value="${element}">
+        ${element}</label>`)
+    })
+
+    container.innerHTML = allCategPrint.join("");
+}
+printCategory();
+
+
+// Para las cards
 function printPastEvents() {
     let pastEvCards = [];
     let containerPsEv = document.getElementById("card-PastEvents");
