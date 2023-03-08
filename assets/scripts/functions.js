@@ -1,5 +1,5 @@
 // ** FUNCIONES Y PLANTILLAS GENERALES **
-// ** FUNCIONES **
+// ****************** FUNCIONES ******************
 
 // Array vacío para ir actualizando de acuerdo a que página acceda a usar las funciones
 let captureList = []; 
@@ -30,7 +30,6 @@ function printEvents(lista) {
     container.innerHTML = allCards.join("");
 }
 
-
 // Filtro cruzado para búsquedas(funciona con "onclick" y "onkeyup" que llaman esta función desde el html)
 function captureData() {
     let text = document.getElementById("idSearch").value.toLowerCase();
@@ -55,7 +54,7 @@ function captureData() {
     }
 }
 
-// ** PLANTILLAS **
+// ****************** PLANTILLAS ******************
 
 // plantilla de las categorias
 function templateCategory(category) {
@@ -88,34 +87,7 @@ function templateCardNotFound() {
             <figure>
                 <img class="card-image" src="/assets/images/not_found.webp" alt="Not found">
             </figure>
-            <h2>No events found</h2>
+            <h2>No events found!</h2>
+            <h3>Try again with other words</h3>
         </article> `
 }
-
-
-
-
-
-
-// function printAllEvents1(filtro) {
-//     let allCards = [];
-//     let container = document.getElementById("card-home");
-
-//     for (let event of filtro) {
-//         let card = `
-//         <article class="card">
-//             <figure>
-//                 <img class="card-image" src="${event.image}" alt="${event.name}">
-//             </figure>
-//             <h2>${event.name}</h2>
-//             <p>${event.description}</p>
-//             <div class="base-card">
-//                 <p>Price $${event.price}</p>
-//                 <a class="but-view" href="./details.html?id=${event._id}">View more</a>
-//             </div> 
-//         </article>
-//         `
-//         allCards.push(card);
-//     }
-//     container.innerHTML = allCards.join("");
-// }

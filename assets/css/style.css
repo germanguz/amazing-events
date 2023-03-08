@@ -83,29 +83,24 @@ fieldset {
 }
 
 .category-flex {
-    width: 60%;
+    width: 1140px;
     display: flex;
     justify-content: space-around;
     color: silver;
 }
 
 label {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .input-text {
-    width: 300px;
-    padding: 5px;
-}
-
-.submit {
-    padding: 5px;
-    background-color: rgb(131, 131, 131);
-}
-
-.submit:hover {
-    color: #b60356;
-    box-shadow: 0 0 10px #d90368;
+    width: 250px;
+    border-radius: 3px;
+    outline: none;
+    border: 0;
+    padding: 3px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
 }
 
 /* ***********tarjetas********** */
@@ -215,6 +210,7 @@ td {
     padding: 10px;
     margin: 0 0 0 auto;
 
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 20px;
     background-color: rgb(131, 131, 131);
     border-radius: 10px;
@@ -227,15 +223,10 @@ td {
     box-shadow: 0 0 10px #d90368;
 }
 
-/* con el sgte cambio letra en botón de búsqueda "go" y el "send" de contact */
-input[type="submit"] {
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
 /* *******Details******** */
 .detail-flex {
     display: flex;
-    width: 900px;
+    width: 917px;
     padding: 20px;
     margin: 100px auto;
     box-shadow: 0 0 10px black;
@@ -244,8 +235,8 @@ input[type="submit"] {
 }
 
 .figure-detail {
-    width: 500px;
-    height: 345px;
+    width: 520px;
+    height: 360px;
     margin-right: 10px;
     box-shadow: 0 0 10px black;
     border-radius: 10px;
@@ -253,16 +244,14 @@ input[type="submit"] {
 }
 
 .img-detail {
-    width: 500px;
-    /* width: 100%; */
-    height: 345px;
-    /* height: 100%; */
-    /* object-fit: cover; */
+    width: 521px;
+    height: 360px;
 }
 
 .descrip-detail {
     width: 336px;
-    padding: 20px;
+    height: 360px;
+    padding: 0 20px;
     margin-left: 10px;
     text-align: center;
     box-shadow: 0 0 10px black;
@@ -350,6 +339,10 @@ input[type="submit"] {
         margin: 0 auto;
     }
 
+    label {
+        font-size: 15px;
+    }
+
     .media-search {
         margin: 0 auto;
     }
@@ -364,21 +357,21 @@ input[type="submit"] {
     }
 
     .detail-flex {
-        width: 700px;
+        width: 800px;
     }
     
     .figure-detail {
-        width: 340px;
-        height: 345px;
+        width: 420px;
+        height: 360px;
     }
     
     .img-detail {
-        width: 345px;
-        height: 345px;
+        width: 420px;
+        height: 360px;
     }
     
     .descrip-detail {
-        width: 300px;
+        width: 320px;
     }
 }
 
@@ -415,11 +408,11 @@ input[type="submit"] {
     }
 
     .category-flex {
-        width: 95%;
+        width: 98%;
     }
     
     label {
-        font-size: 16px;
+        font-size: 11px;
     }
 
     table {
@@ -436,22 +429,25 @@ input[type="submit"] {
 
     .detail-flex {
         width: 350px;
-        height: 700px;
+        height: 690px;
         flex-direction: column;
         margin: 50px auto;
     }
     
     .figure-detail {
-        width: 345px;
-        height: 345px;
+        width: 350px;
+        height: 290px;
+        margin-right: 0;
     }
     
     .img-detail {
-        width: 345px;
-        height: 345px;
+        width: 350px;
+        height: 290px;
     }
     
     .descrip-detail {
+        width: 310px;
+        height: 375px;
         margin: 25px auto 0;
     }
 }
@@ -461,7 +457,6 @@ input[type="submit"] {
         flex-direction: column;
         width: 100%;
         margin: 0;
-        
     }
 
     .header-link {
@@ -492,13 +487,12 @@ input[type="submit"] {
     }
 
     .category-flex {
-        width: 90%;
+        width: 175px;
         flex-direction: column;
-        align-items: center;
     }
 
     label {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .foot-img {
@@ -528,11 +522,12 @@ input[type="submit"] {
     
     .card {
         width: 300px;
-        height: 420px;
+        height: 410px;
     }
     
     .card-image {
         width: 300px;
+        object-fit: unset;
     }
    
     .foot-img {
@@ -573,23 +568,24 @@ input[type="submit"] {
     
     .detail-flex {
         width: 280px;
-        height: 620px;
+        height: 630px;
         flex-direction: column;
         margin: 50px auto;
     }
     
     .figure-detail {
         width: 280px;
-        height: 300px;
+        height: 240px;
     }
     
     .img-detail {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 240px;
     }
     
     .descrip-detail {
         width: 240px;
+        height: 365px;
     }
     
     .detail-title {
