@@ -41,13 +41,13 @@
             </fieldset>
 
             <fieldset class="media-search">
-                <input class="input-text" type="search" placeholder="Search">
+                <input onkeyup="captureData(captureList)" class="input-text" type="search" placeholder="Search" name="searching" id="idSearch">
                 <input class="submit" type="submit" value="go">
             </fieldset>
         </form>
 
         <!-- CARD'S -->
-        <div class="card-flex" id="card-PastEvents">
+        <div class="card-flex" id="idCard">
             <!-- *Acá va el código dinámico -->
             
         </div>
@@ -67,6 +67,7 @@
     </footer>
     
     <script src="/assets/scripts/data_ae.js"></script>
+    <script src="/assets/scripts/functions.js"></script>
     <script src="/assets/scripts/past.js"></script>
 </body>
 
