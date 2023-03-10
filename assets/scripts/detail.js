@@ -5,11 +5,11 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 function printDetail() {
-    const event = data.events.find(element => element._id == id);
+    const event = captureList.find(element => element.id == id);
     const container = document.getElementById("container-Detail")
     const idEncontrado = `
         <figure class="figure-detail">
-            <img class="img-detail" src="${event.image}" alt="${event.nombre}">
+            <img class="img-detail" src="${event.image}" alt="${event.name}">
         </figure>
         <article class="descrip-detail">
             <h1 class="detail-title">${event.name}</h1>

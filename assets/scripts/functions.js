@@ -10,7 +10,13 @@ function printCategory(idCategoria) {
     let allCategPrint = [];
     let container = document.getElementById(idCategoria);
 
-    data.events.forEach(element => {
+    // data.events.forEach(element => {
+    //     if (!allCateg.includes(element.category)) {
+    //         allCateg.push(element.category)
+    //         allCategPrint.push(templateCategory(element.category))
+    //     }
+    // });
+    captureList.forEach(element => {
         if (!allCateg.includes(element.category)) {
             allCateg.push(element.category)
             allCategPrint.push(templateCategory(element.category))
@@ -25,7 +31,7 @@ function printEvents(lista) {
     let container = document.getElementById("idCard");
 
     for (let event of lista) {
-        allCards.push(templateCard(event.image, event.name, event.description, event.price, event._id));
+        allCards.push(templateCard(event.image, event.name, event.description, event.price, event.id));
     }
     container.innerHTML = allCards.join("");
 }
@@ -53,6 +59,58 @@ function captureData() {
         container.innerHTML = templateCardNotFound();
     }
 }
+
+async function fetchApi(categoria) {
+    try {
+        let urlApi = "https://mindhub-ab35.onrender.com/api/amazing-events"
+        // let urlApi = "https://mh.up.railway.app/api/amazing-events"
+        
+        let fetchResponse = await fetch(urlApi)
+        console.log(fetchResponse);
+        let response = await fetchResponse.json()
+        console.log(response);
+        // console.table(response.events);
+
+        let lista = [];
+        for (const e of response.events) {
+            // if(!lista.includes(e.category)) {
+            //     lista.push(e.category);
+            // }
+            lista.push(e.category);
+        }
+        console.log(lista);
+        
+        captureList = response.events;
+
+        // aunque "captureList" está como variable global y printEvents la puede usar, es necesario mandar argumento porque
+        // después cuando filtra se envía este "filtro" a printsEvents para poder imprimir ese filtrado
+        printEvents(captureList);
+
+        printCategory(categoria);
+
+    } catch (error) {
+        console.log("Ocurrió un error en fetchApi");
+        console.log(error);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ****************** PLANTILLAS ******************
 
