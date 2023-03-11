@@ -1,15 +1,5 @@
-// console.table(data.events);
-
 // Para el Home
 
-// Para imprimir las categorías
-// printCategory("categoryId");
-
-// Establezco el array que voy a usar, en este caso el array completo
-// captureList = data.events;
-
-// Para imprimir las cards
-// printEvents(captureList);
-
-// envío el "categoryId" porque luego para imprimir las categorías lo necesito
+// Para imprimir las categorías y las cards llamo a esta función
+// Envío el "categoryId" porque luego para imprimir las categorías lo necesito
 fetchApi("categoryId");

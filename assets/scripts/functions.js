@@ -10,12 +10,6 @@ function printCategory(idCategoria) {
     let allCategPrint = [];
     let container = document.getElementById(idCategoria);
 
-    // data.events.forEach(element => {
-    //     if (!allCateg.includes(element.category)) {
-    //         allCateg.push(element.category)
-    //         allCategPrint.push(templateCategory(element.category))
-    //     }
-    // });
     captureList.forEach(element => {
         if (!allCateg.includes(element.category)) {
             allCateg.push(element.category)
@@ -64,22 +58,14 @@ async function fetchApi(categoria) {
     try {
         let urlApi = "https://mindhub-ab35.onrender.com/api/amazing-events"
         // let urlApi = "https://mh.up.railway.app/api/amazing-events"
+        // let urlApi = "https://mh-h0bh.onrender.com/api/amazing-events"
         
         let fetchResponse = await fetch(urlApi)
-        console.log(fetchResponse);
+        // console.log(fetchResponse);
         let response = await fetchResponse.json()
-        console.log(response);
+        // console.log(response);
         // console.table(response.events);
 
-        let lista = [];
-        for (const e of response.events) {
-            // if(!lista.includes(e.category)) {
-            //     lista.push(e.category);
-            // }
-            lista.push(e.category);
-        }
-        console.log(lista);
-        
         captureList = response.events;
 
         // aunque "captureList" está como variable global y printEvents la puede usar, es necesario mandar argumento porque
@@ -93,22 +79,6 @@ async function fetchApi(categoria) {
         console.log(error);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
