@@ -180,6 +180,10 @@ td {
     font-size: 18px;
 }
 
+.tdBold {
+    font-weight: bold;
+}
+
 /* ******Contact Form******* */
 .form-flex-contact {
     display: flex;
