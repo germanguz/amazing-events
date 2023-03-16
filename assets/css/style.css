@@ -113,7 +113,7 @@ label {
 .card {
     position: relative;
     width: 350px;
-    height: 400px;
+    height: 450px;
     margin: 30px;
     background-color: silver;
     text-align: center;
@@ -146,6 +146,7 @@ label {
     bottom: 0;
     left: 0;
     right: 0;
+    font-weight: bold;
 }
 
 .but-view {
@@ -161,23 +162,26 @@ label {
 
 /* *******Table******* */
 table {
-    background-color: #fdeff5;
+    background-color: silver;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgb(131, 131, 131);
 }
 
-table, th, td {
-    border: 1px solid black;
+table, td {
     margin: 50px auto;
+    
 }
 
 th {
-    background-color: silver;
-    text-align: start;
-    font-size: 20px;
+    background-color: rgb(68, 0, 32);
+    font-size: 24px;
+    color: rgb(131, 131, 131);
 }
 
 td {
     padding: 5px;
     font-size: 18px;
+    border-bottom: 1px solid rgb(68, 0, 32);
 }
 
 .tdBold {
@@ -198,7 +202,7 @@ td {
 
 .contact-label {
     font-size: 24px;
-    color: silver;
+    color: rgb(131, 131, 131);
 }
 
 .contact-input {
@@ -206,7 +210,8 @@ td {
     padding: 5px;
     font-size: 18px;
     border-radius: 12px;
-    background-color: #fdeff5;
+    background-color: silver;
+    box-shadow: 0 0 5px #1e2028 inset;
 }
 
 .contact-but {
@@ -225,12 +230,13 @@ td {
     font-weight: bold;
     color: #b60356;
     box-shadow: 0 0 10px #d90368;
+    cursor: pointer;
 }
 
 /* *******Details******** */
 .detail-flex {
     display: flex;
-    width: 917px;
+    width: 1000px;
     padding: 20px;
     margin: 100px auto;
     box-shadow: 0 0 10px black;
@@ -239,28 +245,29 @@ td {
 }
 
 .figure-detail {
-    width: 520px;
-    height: 360px;
+    width: 604px;
+    display: flex;
     margin-right: 10px;
-    box-shadow: 0 0 10px black;
     border-radius: 10px;
+    box-shadow: 0 0 15px 8px #121318;
     overflow: hidden;
+    background-color: #121318;
 }
 
 .img-detail {
-    width: 521px;
-    height: 360px;
+    width: 604px;
+    margin: auto;
 }
 
 .descrip-detail {
     width: 336px;
-    height: 360px;
     padding: 0 20px;
     margin-left: 10px;
     text-align: center;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px 8px #121318;
     border-radius: 10px;
     background-color: silver;
+    min-height: 370px;
 }
 
 .detail-title {
@@ -317,6 +324,16 @@ td {
 
 /* !!!!!!!!!!!!---MEDIA---!!!!!!!!!!!!! */
 
+@media only screen and (max-width: 1370px) {
+    .page-title {
+        margin: 30px 0;
+    }
+
+    .form-flex {
+        padding: 20px 30px;
+    }
+} 
+
 @media only screen and (max-width: 1300px) {
     .header-flex {
         flex-direction: column;
@@ -330,10 +347,6 @@ td {
         padding: 0 80px;
     }
 
-    .page-title {
-        margin: 40px 0;
-    }
-
     .form-flex {
         flex-direction: column;
     }
@@ -344,7 +357,7 @@ td {
     }
 
     label {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .media-search {
@@ -365,17 +378,22 @@ td {
     }
     
     .figure-detail {
-        width: 420px;
-        height: 360px;
+        width: 450px;
     }
     
     .img-detail {
-        width: 420px;
-        height: 360px;
+        width: 450px;
     }
     
     .descrip-detail {
         width: 320px;
+        min-height: 340px;
+        padding: 0 5px;
+    }
+
+    .detail-title {
+        font-size: 26px;
+        margin-bottom: 15px;
     }
 }
 
@@ -404,11 +422,6 @@ td {
 
     .page-title {
         font-size: 40px;
-        margin: 30px 0;
-    }
-
-    .form-flex {
-        padding: 20px 30px;
     }
 
     .category-flex {
@@ -416,11 +429,15 @@ td {
     }
     
     label {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     table {
         width: 450px;
+    }
+
+    th {
+        font-size: 20px;
     }
     
     .contact-flex {
@@ -433,26 +450,23 @@ td {
 
     .detail-flex {
         width: 350px;
-        height: 690px;
         flex-direction: column;
         margin: 50px auto;
     }
     
     .figure-detail {
         width: 350px;
-        height: 290px;
         margin-right: 0;
     }
     
     .img-detail {
         width: 350px;
-        height: 290px;
     }
     
     .descrip-detail {
         width: 310px;
-        height: 375px;
         margin: 25px auto 0;
+        padding: 0 20px;
     }
 }
 
@@ -491,12 +505,17 @@ td {
     }
 
     .category-flex {
-        width: 175px;
-        flex-direction: column;
+        width: 365px;
+        flex-wrap: wrap;
     }
 
     label {
         font-size: 18px;
+        width: 120px;
+    }
+
+    label:last-child {
+        margin-right: 243px;
     }
 
     .foot-img {
@@ -519,6 +538,14 @@ td {
         font-size: 28px;
     }
 
+    .category-flex {
+        width: 300px;
+    }
+
+    label:last-child {
+        margin-right: 150px;
+    }
+
     .input-text {
         width: 250px;
         padding: 5px;
@@ -526,7 +553,7 @@ td {
     
     .card {
         width: 300px;
-        height: 410px;
+        height: 440px;
     }
     
     .card-image {
@@ -572,24 +599,20 @@ td {
     
     .detail-flex {
         width: 280px;
-        height: 630px;
         flex-direction: column;
         margin: 50px auto;
     }
     
     .figure-detail {
         width: 280px;
-        height: 240px;
     }
     
     .img-detail {
         width: 280px;
-        height: 240px;
     }
     
     .descrip-detail {
         width: 240px;
-        height: 365px;
     }
     
     .detail-title {
@@ -598,5 +621,10 @@ td {
     
     .descrip-detail>p {
         font-size: 16px;
+    }
+
+    .card > h2 {
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
