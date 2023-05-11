@@ -8,7 +8,7 @@ const id = params.get("id");
 // Fc para imprimir el detalle de la card de acuerdo al id
 async function printDetail() {
     try {
-        let urlApi = "https://mindhub-ab35.onrender.com/api/amazing-events"
+        let urlApi = "./assets/scripts/all-events.json"
         let fetchResponse = await fetch(urlApi)
         let response = await fetchResponse.json()
         

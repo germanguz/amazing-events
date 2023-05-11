@@ -1,3 +1,4 @@
+// este archivo se usó en la primera parte del proyecto. Luego se cambió por api externa
 let data = {
     "currentDate": "2022-01-01",
     "events": [

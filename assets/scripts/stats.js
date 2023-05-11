@@ -2,7 +2,7 @@
 
 async function createPastEventsArrayFromApiToStats() {
     try {
-        let urlApi = "https://mindhub-ab35.onrender.com/api/amazing-events"
+        let urlApi = "./assets/scripts/all-events.json"
         let fetchResponse = await fetch(urlApi)
         let response = await fetchResponse.json()
 
@@ -20,8 +20,6 @@ async function createPastEventsArrayFromApiToStats() {
         // pastEvArray.sort((a, b) => a.capacity > b.capacity ? -1 : 1);
 
         // *Forma 2 de ordenar array
-        // !Si intento ordenar de mayor a menor con "+" no funciona, pero de menor a mayor con "-" si funciona. VER!!
-        // !La solución que encontré es usar siempre el "-" e invertir los parámetros de lugar, para asc o desc
         pastEvArray.sort((a, b) => b.capacity - a.capacity);
 
         // *Forma 3 de ordenar array. La forma larga de hacerlo con los if
@@ -42,7 +40,7 @@ async function createPastEventsArrayFromApiToStats() {
         let maxCapacity = document.getElementById("idMaxCapacity");
         maxCapacity.innerHTML = `${pastEvArray[0].capacity.toLocaleString('en-US')}`
 
-        // Ordeno el array de mayor a menor asistencia para usarlo en las siguientes impresiones
+        // Ordeno el array de mayor a menor asistencia, para usarlo en las siguientes impresiones
         pastEvArray.sort((a, b) => b.assistance - a.assistance);
 
         // *Imprime el evento que tuvo mayor asistencia
@@ -128,19 +126,23 @@ createPastEventsArrayFromApiToStats()
 
 async function createUpcomingEventsArrayFromApiToStats() {
     try {
-        let urlApi = "https://mindhub-ab35.onrender.com/api/amazing-events?time=upcoming"
+        // let urlApi = "https://mindhub-ab35.onrender.com/api/amazing-events?time=upcoming"
+        let urlApi = "./assets/scripts/all-events.json"
         let fetchResponse = await fetch(urlApi)
         let response = await fetchResponse.json()
 
-        let upcomingEvArray = [];
-        for (let event of response.events) {
-            upcomingEvArray.push(event);
-        }
-        // console.log(upcomingEvArray);
-        // for (let e of upcomingEvArray) {
-        //     console.log(Object.keys(e));
+        // *esta era la que usaba con la api externa porque ya venía filtrado con el "endpoint: ?time=upcoming"
+        // let upcomingEvArray = [];
+        // for (let event of response.events) {
+        //     upcomingEvArray.push(event);
         // }
 
+        let upcomingEvArray = [];
+        for (let event of response.events) {
+            if (event.date > response.currentDate) {
+                upcomingEvArray.push(event);
+            }
+        }
 
         // *IMPRESIONES EN HTML TABLA 2 - Upcoming events
 
