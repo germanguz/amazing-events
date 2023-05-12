@@ -34,20 +34,25 @@
         </section>
 
         <!-- FORM -->
-        <form class="form-flex-contact" action="./README.md" method="get">
+        <form class="form-flex-contact" method="get">
             <fieldset class="contact-flex">
                 <label class="contact-label" for="nameId">Name:</label>
                 <input class="contact-input" type="text" name="name" id="nameId">
                 
-                <label class="contact-label" for="emailId">Email:</label>
+                <label class="contact-label" for="emailId">E-mail:</label>
                 <input class="contact-input" type="email" name="email" id="emailId">
                 
                 <label class="contact-label" for="messageId">Message:</label>
                 <textarea class="contact-input" name="message" id="messageId" cols="50" rows="10"></textarea>
     
-                <input class="contact-but" type="submit" value="Send">
+                <input class="contact-but" type="submit" value="Send" id="contactSubmitId">
             </fieldset>
         </form>
+
+        <section class="modal" id="modalId">
+            <!-- Acá se carga el código dinámico desde el JS -->
+            
+        </section>
 
     </main>
 
@@ -63,6 +68,7 @@
         </section>
     </footer>
 
+    <script src="./assets/scripts/contact.js"></script>
 </body>
 
 </html>

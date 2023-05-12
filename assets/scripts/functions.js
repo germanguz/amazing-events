@@ -1,5 +1,5 @@
-// ** FUNCIONES Y PLANTILLAS GENERALES **
-// ****************** FUNCIONES ******************
+// ** FUNCIONES Y PLANTILLAS GENERALES ** //
+// ****************** FUNCIONES ****************** //
 
 // Array vacío para ir actualizando de acuerdo a que página acceda a usar las funciones
 let captureList = []; 
@@ -56,20 +56,17 @@ function captureData() {
 
 async function fetchApi(categoria) {
     try {
-        let urlApi = "https://mindhub-ab35.onrender.com/api/amazing-events"
-        // let urlApi = "https://mh.up.railway.app/api/amazing-events"
-        // let urlApi = "https://mh-h0bh.onrender.com/api/amazing-events"
+        // *esta era la direccion de api que usaba antes, pero que se dio de baja y la cambié por "all-events.json"
+        // let urlApi = "https://mindhub-ab35.onrender.com/api/amazing-events"
+        let urlApi = "./assets/scripts/all-events.json";
         
         let fetchResponse = await fetch(urlApi)
-        // console.log(fetchResponse);
         let response = await fetchResponse.json()
-        // console.log(response);
-        // console.table(response.events);
 
         captureList = response.events;
 
-        // aunque "captureList" está como variable global y printEvents la puede usar, es necesario mandar argumento porque
-        // después cuando filtra se envía este "filtro" a printsEvents para poder imprimir ese filtrado
+        // aunque "captureList" está como variable global y "printEvents" la puede usar, es necesario mandar argumento porque
+        // después cuando filtra se envía este "filtro" a "printsEvents" para poder imprimir ese filtrado
         printEvents(captureList);
 
         printCategory(categoria);

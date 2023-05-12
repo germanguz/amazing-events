@@ -3,7 +3,7 @@
 // Para las categorías y las cards
 async function createPastEventsArrayFromApi() {
     try {
-        let urlApi = "https://mindhub-ab35.onrender.com/api/amazing-events"
+        let urlApi = "./assets/scripts/all-events.json"
         let fetchResponse = await fetch(urlApi)
         let response = await fetchResponse.json()
         
