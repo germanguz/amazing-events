@@ -74,3 +74,8 @@ async function printDetail() {
 }
 
 printDetail();
+
+
+const back = document.querySelector("#detailBackId");
+
+back.addEventListener("click", () => window.history.back());

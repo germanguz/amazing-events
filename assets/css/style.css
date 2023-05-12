@@ -246,7 +246,6 @@ td {
 
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 
     background-color: silver;
     box-shadow:  0 0 0 100vmax rgba(0, 0, 0, 0.5);
@@ -278,7 +277,7 @@ td {
     display: flex;
     width: 1000px;
     padding: 20px;
-    margin: 100px auto;
+    margin: 100px auto 50px;
     box-shadow: 0 0 10px black;
     border-radius: 10px;
     background-color: rgb(131, 131, 131);
@@ -322,6 +321,27 @@ td {
 
 .descrip-detail span {
     font-weight: bold;
+}
+
+.detail-but {
+    width: 150px;
+    padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    background-color: rgb(131, 131, 131);
+    border-radius: 10px;
+    border: none;
+}
+
+.detail-but:hover {
+    font-weight: bold;
+    color: #b60356;
+    box-shadow: 0 0 10px #d90368;
+    cursor: pointer;
 }
 
 
@@ -565,6 +585,10 @@ td {
     .foot-title>h2 {
         font-size: 28px;
     }
+
+    .modal {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -666,5 +690,10 @@ td {
     .card > h2 {
         margin-left: 5px;
         margin-right: 5px;
+    }
+
+    .modal {
+        width: 80%;
+        font-size: 16px;
     }
 }
