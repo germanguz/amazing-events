@@ -110,7 +110,7 @@ function templateCardNotFound() {
     return `
         <article class="card">
             <figure>
-                <img class="card-image" src="/assets/images/not_found.webp" alt="Not found">
+                <img class="card-image" src="./assets/images/not_found.webp" alt="Not found">
             </figure>
             <h2>No events found!</h2>
             <h3>Try again with other words</h3>
