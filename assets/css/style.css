@@ -545,7 +545,7 @@ td {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-inline: 25px;
+        padding: 0 25px;
     }
 
     .menu-but {
@@ -613,7 +613,7 @@ td {
         flex-wrap: wrap;
     }
     
-    label {
+     label {
         font-size: 18px;
         width: 120px;
     }
