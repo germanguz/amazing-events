@@ -641,7 +641,7 @@ td {
     }
 
     .header-flex {
-        padding-inline: 15px;
+        padding: 0 15px;
     }
 
     .menu-but {
