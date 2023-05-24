@@ -58,6 +58,10 @@ a {
     box-shadow: 0 0 10px #d90368;
 }
 
+.menu-but {
+    display: none;
+}
+
 .section-title-flex {
     display: flex;
     justify-content: space-between;
@@ -531,21 +535,61 @@ td {
 }
 
 @media only screen and (max-width: 675px) {
+    .img-logo {
+        width: 300px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 25px;
+    }
+
+    .menu-but {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        padding: 0 10px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 20px;
+        background-color: rgb(131, 131, 131);
+        border-radius: 10px;
+    }
+
+    .menu-but.close {
+        margin-right: -60px;
+    }
+
     .link-flex {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
         flex-direction: column;
-        width: 100%;
-        margin: 0;
+        width: 200px;
+        height: 250px;
+        margin: unset;
+        padding: 15px 0;
+        background-color: #1e2028;
+        border-bottom-left-radius: 10px;
     }
 
     .header-link {
-        width: 100%;
+        background-color: #1e2028;
+        color: rgb(131, 131, 131);
         height: 30px;
         font-size: 18px;
         border-radius: 0px;
         display: flex;
         justify-content: center;
-        padding: 0;
         text-decoration: underline #b60356;
+    }
+
+    .visible {
+        display: flex;
     }
 
     .header-link:hover {
@@ -568,7 +612,7 @@ td {
         width: 365px;
         flex-wrap: wrap;
     }
-
+    
     label {
         font-size: 18px;
         width: 120px;
@@ -595,7 +639,25 @@ td {
     .img-logo {
         width: 200px;
     }
-    
+
+    .header-flex {
+        padding-inline: 15px;
+    }
+
+    .menu-but {
+        height: 35px;
+        padding: 0 5px;
+        font-size: 18px;
+    }
+
+    .menu-but.close {
+        margin-right: -100px;
+    }
+
+    .link-flex {
+        padding: 5px 0;
+    }
+
     .page-title {
         margin: 10px 0;
         text-align: center;

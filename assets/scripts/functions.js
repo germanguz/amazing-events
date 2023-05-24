@@ -1,6 +1,18 @@
 // ** FUNCIONES Y PLANTILLAS GENERALES ** //
 // ****************** FUNCIONES ****************** //
 
+const menu = document.querySelector("#idLinkContainer");
+const open = document.querySelector("#idMenu");
+const close = document.querySelector("#idClose");
+
+open.addEventListener("click", () => {
+    menu.classList.add("visible");
+});
+
+close.addEventListener("click", () => {
+    menu.classList.remove("visible");
+});
+
 // Array vacío para ir actualizando de acuerdo a que página acceda a usar las funciones
 let captureList = []; 
 
